@@ -21,6 +21,8 @@ overlaid video. Include a brief write-up explaining your assumptions and the too
 techniques you used to create the simulation. Please attach a readme and add clear
 instructions on how to run your simulation.
 ● Use any programming language or software tools you prefer.
+
+
 Bonus Task: Vehicle Image Classification
 Overview:
 Classify objects that appear in the backup camera video, such as other vehicles, pedestrians, or
