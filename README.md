@@ -27,3 +27,6 @@ run the code through
 
 ### Conclusion:
 This project successfully integrates Ackermann steering geometry for realistic trajectory simulation and employs YOLOv7 for accurate object detection. Assumptions include the reference point and pre-trained YOLOv7 model usage. The code is well-organized, documented, and comes with clear execution instructions.
+
+### Result:
+![ezgif com-gif-maker](https://github.com/PardisTaghavi/real_time_tracking_AB3DMOT/blob/main/TrackingDemo.gif)
