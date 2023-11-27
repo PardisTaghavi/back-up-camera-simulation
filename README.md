@@ -17,15 +17,21 @@ YOLOv7, pre-trained on COCO dataset, is used for object detection without fine-t
 ### Implementation:
 
 
-This code use yolov7:
+This code use yolov7 repo:
 
 ```git clone https://github.com/WongKinYiu/yolov7.git```
 
+clone this repo:
+
 ```git clone https://github.com/PardisTaghavi/back-up-camera-simulation.git```
 
-video of the backup camera should be downloaded from the videos folder and yolov7 model should be downloaded from the following link: 
+video of the backup camera should be downloaded from the following link:
+https://drive.google.com/file/d/1-BdCbWC2PCRZKv-ptSG2YAWDoLyMCIHN/view?usp=drive_link
+
+yolov7 checkpoint could be found from the following link: 
 https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
-run the code through
+
+Finally, run the code through:
 
 ```python backupCamera.py ```
 
