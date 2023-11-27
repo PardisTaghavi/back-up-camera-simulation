@@ -23,7 +23,8 @@ This code use yolov7:
 video of the backup camera should be downloaded from the videos folder and yolov7 model should be downloaded from the following link: 
 https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 run the code through
-```python code.py ```
+
+```python backupCamera.py ```
 
 ### Conclusion:
 This project successfully integrates Ackermann steering geometry for realistic trajectory simulation and employs YOLOv7 for accurate object detection. Assumptions include the reference point and pre-trained YOLOv7 model usage. The code is well-organized, documented, and comes with clear execution instructions.
