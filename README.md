@@ -18,8 +18,10 @@ YOLOv7, pre-trained on COCO dataset, is used for object detection without fine-t
 
 
 This code use yolov7:
+
 ```git clone https://github.com/WongKinYiu/yolov7.git```
 ```git clone https://github.com/PardisTaghavi/back-up-camera-simulation.git```
+
 video of the backup camera should be downloaded from the videos folder and yolov7 model should be downloaded from the following link: 
 https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 run the code through
