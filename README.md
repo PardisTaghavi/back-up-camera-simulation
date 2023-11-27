@@ -1,65 +1,29 @@
-# back-up-camera-simulation
+## Backup Camera Simulation:
+dynamic model: Ackermann Steering Geometry
+object detection model: pretrained yolov7
 
-Take-Home Assignment for ADAS Intern Role
-Backup Camera Simulation with Object Classification
+### Objective:
+This project aims to simulate a backup camera. We used dynamic rear wheel trajectory using Ackermann steering geometry. Object detection is implemented using the pre-trained YOLOv7 model. Here's a concise summary of our approach:
 
-Overview:
-In this take-home assignment, you will simulate a back-up camera with dynamic trajectory of
-rear wheels using a 10-second clip from your phone. You will be required to make assumptions
-regarding steering geometry and vehicle dimensions and overlay the trajectory of the rear
-wheels on the video recorded earlier. The objective is to test your ability to apply your
-knowledge of ADAS software development and vehicle dynamics to create a functional
-simulation, and basic object classification..
-Instructions:
+### Simulation of Backup Camera View and Rear Wheel Trajectory:
 
-● Record or choose a 10-second clip from your phone, simulating a backup camera's view.
+Ackermann Steering Geometry is used to calculate steering angles(δ) based on wheelbase(L) and turning radius(R). Due to the absence of specific sensor data, we assume the bottom middle of the image as the car's reference point. In real scenarios, data of sensors such as GPU or IMU could be used and be transformed to image coordinates using intrinsic and extrinsic camera parameters.
 
-● Assume realistic vehicle dimensions and steering geometry. You can pick any car model
-for this exercise.
+### Object Detection Using YOLOv7:
 
-● Overlay the trajectory of the rear wheels on the video using a graphical interface. Make
-sure that the trajectory is accurate and realistic.
-
-● Once you have completed the simulation, submit a link to your repository with the
-overlaid video. Include a brief write-up explaining your assumptions and the tools and
-techniques you used to create the simulation. Please attach a readme and add clear
-instructions on how to run your simulation.
-
-● Use any programming language or software tools you prefer.
+YOLOv7, pre-trained on COCO dataset, is used for object detection without fine-tuning for this exercise. Results show good detection and real-time performance so we did not fine-tune the model fo this assignment.
 
 
+### Implementation:
 
-Bonus Task: Vehicle Image Classification
-Overview:
-Classify objects that appear in the backup camera video, such as other vehicles, pedestrians, or
-obstacles, feel free to create your own labels and make sure to document them. You are
-allowed to use pre-trained machine learning models for object classification.
-Instructions:
 
-● Use the provided Vehicles-OpenImages Object Detection Dataset to classify different
-vehicle types.
+This code use yolov7:
+```git clone https://github.com/WongKinYiu/yolov7.git```
+```git clone https://github.com/PardisTaghavi/back-up-camera-simulation.git```
+video of the backup camera should be downloaded from the videos folder and yolov7 model should be downloaded from the following link: 
+https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+run the code through
+```python code.py ```
 
-● You may use any pre-trained machine learning model and adapt it to classify the
-vehicles in the dataset into their respective categories.
-
-● Use any machine learning frameworks you are comfortable with.
-
-● Include a write-up on your approach, the pre-trained model used, and any significant
-modifications or decisions made.
-
-● Please submit your model along with the accompanying documentation in the same
-repository used for the main task. Ensure that clear instructions on how to execute your
-program are included.
-
-Harbinger ADAS Intern Take Home V2
-
-Dataset URL: Vehicles-OpenImages [Vehicles-OpenImages Dataset (roboflow.com)].
-Assessment Criteria:
-
-● Accuracy of the simulation in replicating a backup camera view.
-
-● Realism in the assumed vehicle properties.
-
-● Code quality, organization, and documentation.
-
-● Creativity in applying and adapting pre-trained models for the task.
+### Conclusion:
+This project successfully integrates Ackermann steering geometry for realistic trajectory simulation and employs YOLOv7 for accurate object detection. Assumptions include the reference point and pre-trained YOLOv7 model usage. The code is well-organized, documented, and comes with clear execution instructions.
