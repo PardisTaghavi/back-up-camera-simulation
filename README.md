@@ -29,4 +29,4 @@ run the code through
 This project successfully integrates Ackermann steering geometry for realistic trajectory simulation and employs YOLOv7 for accurate object detection. Assumptions include the reference point and pre-trained YOLOv7 model usage. The code is well-organized, documented, and comes with clear execution instructions.
 
 ### Result:
-![ezgif com-gif-maker]([https://github.com/PardisTaghavi/back-up-camera-simulation/results/result.gif](https://github.com/PardisTaghavi/back-up-camera-simulation/blob/main/results/result.gif)https://github.com/PardisTaghavi/back-up-camera-simulation/blob/main/results/result.gif)
+![ezgif com-gif-maker] (https://github.com/PardisTaghavi/back-up-camera-simulation/blob/main/results/result.gif)
